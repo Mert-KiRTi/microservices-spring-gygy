@@ -1,9 +1,9 @@
 spring:
-    application:
-        name: product-service
-        
+  application:
+    name: product-service
+  profiles:
+    active: dev
+  config:
+    import: "optional:configserver:http://localhost:8888"
 server:
-  ports:
-    - 8080
-    - 8081
-    - 8082
+  port: 8082

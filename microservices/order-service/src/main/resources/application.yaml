@@ -1,22 +1,5 @@
 spring:
-    application:
-        name: order-service
-    kafka:
-      bootstrap-servers: localhost:9092
-      producer:
-        acks: all
-        retries: 3
-    datasource:
-      url: jdbc:h2:mem:testdb
-      driver-class-name: org.h2.Driver
-      username: sa
-      password: 
-    jpa:
-      database-platform: org.hibernate.dialect.H2Dialect
-      hibernate:
-        ddl-auto: create-drop
-
-server:
-  ports:
-    - 8086
-    - 8087
+  application:
+    name: order-service
+  config:
+    import: "optional:configserver:http://localhost:8888"

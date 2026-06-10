@@ -1,13 +1,11 @@
 spring:
   application:
-    name: product-service
-  profiles:
-    active: dev
+    name: order-service
   kafka:
     bootstrap-servers: localhost:9092
-    consumer:
-      group-id: product-group
-      auto-offset-reset: earliest
+    producer:
+      acks: all
+      retries: 3
   datasource:
     url: jdbc:h2:mem:testdb
     driver-class-name: org.h2.Driver
@@ -19,4 +17,4 @@ spring:
       ddl-auto: create-drop
 
 server:
-  port: 8082
+  port: 8086

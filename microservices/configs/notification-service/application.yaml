@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: notification-service
+  cloud:
+    stream:
+      bindings:
+        processProductCdc-in-0:
+          destination: product-service.public.products
+          group: notification-product-cdc-group
+          content-type: application/json
+      kafka:
+        binder:
+          brokers: localhost:9092
+
+server:
+  port: 8088

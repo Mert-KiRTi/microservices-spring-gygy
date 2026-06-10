@@ -2,5 +2,16 @@ spring:
     application:
         name: notification-service
     
+    cloud:
+        stream:
+            bindings:
+                processProductCdc-in-0:
+                    destination: product-service.public.products
+                    group: notification-product-cdc-group
+            
+            kafka:
+                binder:
+                    brokers: localhost:9092
+
 server:
-    ports: 8088
+    port: 8088

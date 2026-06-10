@@ -5,8 +5,8 @@ spring:
         config:
             server:
                 git: 
-                    uri: https://github.com/halitkalayci/Microservices-Spring-GYGY5.git
-                    default-label: master
+                    uri: https://github.com/Mert-KiRTi/microservices-spring-gygy.git
+                    default-label: main
                     search-paths: microservices/configs,microservices/configs/{application}
                     clone-on-start: true
                     force-pull: true

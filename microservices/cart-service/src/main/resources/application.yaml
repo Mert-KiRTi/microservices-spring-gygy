@@ -3,6 +3,5 @@ spring:
         name: cart-service
 
 server:
-  ports:
-    - 8084
-    - 8085
+  port:  8084
+    

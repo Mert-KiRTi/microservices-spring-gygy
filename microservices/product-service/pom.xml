@@ -51,6 +51,10 @@
 			<artifactId>spring-cloud-config-client</artifactId>
 		</dependency>
     </dependencies>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-oauth2-resource-server</artifactId>
+		</dependency>
+    </dependencies>
     <build>
         <plugins>
             <plugin>

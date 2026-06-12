@@ -1,4 +1,4 @@
-package com.turkcell.product_service.config;
+package com.turkcell.cart_service.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

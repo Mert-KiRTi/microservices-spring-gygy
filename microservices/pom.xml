@@ -23,6 +23,10 @@
         <module>eureka-server</module>
         <module>gateway-server</module>
         <module>config-server</module>
+        <module>bff-server</module>
+        <module>cart-service</module>
+        <module>order-service</module>
+        <module>notification-service</module>
     </modules>
 
     <properties>
